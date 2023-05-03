@@ -46,7 +46,9 @@ void tarjan(int u)
 	}
 	if (dfn[u] == low[u])
 	{
-		
+		while(!s.empty()){
+			
+		}
 	}
 }
 int main()
