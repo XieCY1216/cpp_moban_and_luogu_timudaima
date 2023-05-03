@@ -16,11 +16,18 @@ struct G{
 	}
 }bef,aft;
 int n,m;
+void tarjan(){
+	
+}
 int main(){
 	bef.init();
 	aft.init();
 	scanf("%d%d",&n,&m);
-	printf("%d",n+m);
+	for(int i=1;i<=m;i++){
+		int u,v;
+		scanf("%d%d",&u,&v);
+		bef.build(u,v);
+	}
 	return 0;
 }
 
