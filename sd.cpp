@@ -7,6 +7,9 @@ struct e{
 struct G{
 	e edge[M];
 	int head[N],cnt=0;
+	void init(){
+		memset(head,-1,sizeof(head));
+	}
 	void build(int u,int v){
 		edge[++cnt]={head[u],u,v};
 		head[u]=cnt;
@@ -14,6 +17,8 @@ struct G{
 }bef,aft;
 int n,m;
 int main(){
+	bef.init();
+	aft.init();
 	scanf("%d%d",&n,&m);
 	printf("%d",n+m);
 	return 0;
